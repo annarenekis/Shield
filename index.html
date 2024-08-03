@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shield</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Ubuntu:wght@700&display=swap"
+          rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+<!--Header-->
+<div class="wrapper-dark" id="home">
+    <header class="header w-section flex-space-between">
+        <a href="./index.html"><img class="header-logo" src="./imgs/logo.svg" alt="Shield Logo"></a>
+        <nav class="flex navbar">
+            <ul class="flex navbar-list">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#services">Service</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+            </ul>
+            <button class="navbar-button button">Login</button>
+        </nav>
+    </header>
+</div>
+<!--Fully Managed Cloud & Web Hosting/About Us section-->
+<div class="wrapper-dark" id="about">
+    <section class="about w-section flex-space-between">
+        <div class="about-container">
+            <h1 class="about-title title">Fully Managed Cloud & Web Hosting</h1>
+            <p class="about-text text">Dedicated resources, full root access, & easy scaling. It’s the virtual private
+                server you've been craving</p>
+            <button class="about-button button">View Pricing</button>
+        </div>
+        <img class="about-img" src="./imgs/excited-young-woman-receiving-like-notifications-on-her-laptop.png"
+             alt="excited young woman receiving like notifications on her laptop">
+    </section>
+</div>
+<!--Search Your Domain Now-->
+<section class="domains flex padding150 w-section">
+    <div class="search-box">
+        <h3 class="search-title title">Search Your Domain Now</h3>
+        <form id="searchForm" class="search-form">
+            <input class="text" type="search" name="domain" id="domainInput" placeholder="Search your domain..."
+                   required autocomplete="off"/>
+            <div id="suggestions" class="suggestions text"></div>
+            <button class="search-button button" type="submit">Find Now</button>
+        </form>
+    </div>
+    <div class="grid-container domains-content">
+        <div class="domains-item">
+            <h5 class="domain-name title">.com</h5>
+            <p class="domain-price">$10 / month</p>
+        </div>
+        <div class="domains-item">
+            <h5 class="domain-name title">.co.uk</h5>
+            <p class="domain-price">$30 / month</p>
+        </div>
+        <div class="domains-item">
+            <h5 class="domain-name title">.shop</h5>
+            <p class="domain-price">$12 / month</p>
+        </div>
+        <div class="domains-item">
+            <h5 class="domain-name title">.in</h5>
+            <p class="domain-price">$11 / month</p>
+        </div>
+        <div class="domains-item">
+            <h5 class="domain-name title">.de</h5>
+            <p class="domain-price">$17 / month</p>
+        </div>
+        <div class="domains-item">
+            <h5 class="domain-name title">.nl</h5>
+            <p class="domain-price">$20 / month</p>
+        </div>
+    </div>
+</section>
+<!--Our Services-->
+<div class="wrapper-light flex padding150">
+    <section class="services flex w-section" id="services">
+        <h2 class="services-title title">Our Services</h2>
+        <div class="services-content grid-container">
+            <div class="services-item flex">
+                <img class="service-icon" src="./imgs/icons/icon1.svg" alt="Shared Web Hosting icon">
+                <h5 class="service-title title">Shared Web Hosting</h5>
+                <p class="service-description">Vestibulum tristique urna eget odio interdum pellentesque. In sodales
+                    venenatis lectus, ac tincidunt quam placerat egestas.</p>
+            </div>
+            <div class="services-item flex">
+                <img class="service-icon" src="./imgs/icons/icon2.svg" alt="VPS  Hosting icon">
+                <h5 class="service-title title">VPS Hosting</h5>
+                <p class="service-description">Vestibulum tristique urna eget odio interdum pellentesque. In sodales
+                    venenatis lectus, ac tincidunt quam placerat egestas.</p>
+            </div>
+            <div class="services-item flex">
+                <img class="service-icon" src="./imgs/icons/icon3.svg" alt="Dedicated Server  icon">
+                <h5 class="service-title title">Dedicated Server </h5>
+                <p class="service-description">Vestibulum tristique urna eget odio interdum pellentesque. In sodales
+                    venenatis lectus, ac tincidunt quam placerat egestas.</p>
+            </div>
+            <div class="services-item flex">
+                <img class="service-icon" src="./imgs/icons/icon4.svg" alt="Cloud Hosting icon">
+                <h5 class="service-title title">Cloud Hosting</h5>
+                <p class="service-description">Vestibulum tristique urna eget odio interdum pellentesque. In sodales
+                    venenatis lectus, ac tincidunt quam placerat egestas.</p>
+            </div>
+            <div class="services-item flex">
+                <img class="service-icon" src="./imgs/icons/icon5.svg" alt="Domain Names icon">
+                <h5 class="service-title title">Domain Names</h5>
+                <p class="service-description">Vestibulum tristique urna eget odio interdum pellentesque. In sodales
+                    venenatis lectus, ac tincidunt quam placerat egestas.</p>
+            </div>
+            <div class="services-item flex">
+                <img class="service-icon" src="./imgs/icons/icon6.svg" alt="License Keys icon">
+                <h5 class="service-title title">License Keys</h5>
+                <p class="service-description">Vestibulum tristique urna eget odio interdum pellentesque. In sodales
+                    venenatis lectus, ac tincidunt quam placerat egestas.</p>
+            </div>
+        </div>
+    </section>
+</div>
+<!--Word From Our Clients/Feedbacks-->
+<section class="feedback padding150 flex w-section">
+    <div class="feedback-container w-section flex">
+        <h2 class="feedback-title">Word From Our Clients</h2>
+        <div class="feedback-grid">
+            <div class="feedback-item flex">
+                <p class="feedback-text">Aenean suscipit eu nulla et lacinia. Nulla diam felis, malesuada ut erat quis,
+                    mattis dignissim justo.</p>
+                <h5 class="client-name title">James Harly</h5>
+                <p class="client-info">Harly web, USA</p>
+            </div>
+            <div class="feedback-item flex">
+                <p class="feedback-text">Aenean suscipit eu nulla et lacinia. Nulla diam felis, malesuada ut erat quis,
+                    mattis dignissim justo.</p>
+                <h5 class="client-name title">James Harly</h5>
+                <p class="client-info">Harly web, USA</p>
+            </div>
+            <div class="feedback-item flex">
+                <p class="feedback-text">Aenean suscipit eu nulla et lacinia. Nulla diam felis, malesuada ut erat quis,
+                    mattis dignissim justo.</p>
+                <h5 class="client-name title">James Harly</h5>
+                <p class="client-info">Harly web, USA</p>
+            </div>
+        </div>
+        <img src="./imgs/group.svg" alt="points">
+    </div>
+</section>
+<div class="blue-wrapper flex">
+    <section class="stats w-section">
+        <ul class="stats-list flex-space-between">
+            <li class="stats-item ">
+                <span class="stat-number title">70K</span>
+                <span class="stat-label text">Shared Web Hosting</span>
+            </li>
+            <li class="stats-item">
+                <span class="stat-number title">100M</span>
+                <span class="stat-label text">VPS Hosting</span>
+            </li>
+            <li class="stats-item ">
+                <span class="stat-number title">11K</span>
+                <span class="stat-label text">Dedicated Server</span>
+            </li>
+            <li class="stats-item ">
+                <span class="stat-number title">199+</span>
+                <span class="stat-label text">Cloud Hosting</span>
+            </li>
+        </ul>
+    </section>
+</div>
+<section class="pricing padding150 flex">
+    <div class="pricing-container w-section flex">
+        <h2 class="pricing-title title">Our Flexible Plan</h2>
+        <div class="pricing-table flex">
+            <div class="pricing-card flex">
+                <h5 class="plan-title title">Monthly</h5>
+                <h4 class="price-title title">$199.50</h4>
+                <ul class="features">
+                    <li class="feature-item text flex"><span class="feature-highlight">Host 5</span> Domain</li>
+                    <li class="feature-item text flex"><span class="feature-highlight">2GB NVMe </span> Storage</li>
+                    <li class="feature-item text flex"><span class="feature-highlight">50GB </span> Bandwidth</li>
+                    <li class="feature-item text flex"><span class="feature-highlight">Free </span> SSL Certificate</li>
+                    <li class="feature-item text flex"><span class="feature-highlight">24/7 </span> Support</li>
+                    <li class="feature-item text flex"><span class="feature-highlight">2GB NVMe </span> Storage</li>
+                    <li class="feature-item text flex"><span class="feature-highlight">Free </span> SSL Certificate</li>
+                </ul>
+                <button class="feature-button button">Buy Now</button>
+            </div>
+            <div class="pricing-card flex">
+                <h5 class="plan-title title">Quarterly</h5>
+                <h4 class="price-title title">$199.50</h4>
+                <ul class="features">
+                    <li class="feature-item text flex"><span class="feature-highlight">Host 5</span> Domain</li>
+                    <li class="feature-item text flex"><span class="feature-highlight">2GB NVMe</span> Storage</li>
+                    <li class="feature-item text flex"><span class="feature-highlight">50GB</span> Bandwidth</li>
+                    <li class="feature-item text flex"><span class="feature-highlight">Free</span> SSL Certificate</li>
+                    <li class="feature-item text flex"><span class="feature-highlight">24/7</span> Support</li>
+                    <li class="feature-item text flex"><span class="feature-highlight">2GB NVMe</span> Storage</li>
+                    <li class="feature-item text flex"><span class="feature-highlight">Free</span> SSL Certificate</li>
+                </ul>
+                <button class="feature-button button">Buy Now</button>
+            </div>
+            <div class="pricing-card flex">
+                <h5 class="plan-title title">Semi Annually</h5>
+                <h4 class="price-title title">$199.50</h4>
+                <ul class="features">
+                    <li class="feature-item text flex"><span class="feature-highlight">Host 5</span> Domain</li>
+                    <li class="feature-item text flex"><span class="feature-highlight">2GB NVMe</span> Storage</li>
+                    <li class="feature-item text flex"><span class="feature-highlight">50GB</span> Bandwidth</li>
+                    <li class="feature-item text flex"><span class="feature-highlight">Free</span> SSL Certificate</li>
+                    <li class="feature-item text flex"><span class="feature-highlight">24/7</span> Support</li>
+                    <li class="feature-item text flex"><span class="feature-highlight">2GB NVMe</span> Storage</li>
+                    <li class="feature-item text flex"><span class="feature-highlight">Free</span> SSL Certificate</li>
+                </ul>
+                <button class="feature-button button">Buy Now</button>
+            </div>
+            <div class="pricing-card flex">
+                <h5 class="plan-title title">Annually</h5>
+                <h4 class="price-title title">$199.50</h4>
+                <ul class="features">
+                    <li class="feature-item text flex"><span class="feature-highlight">Host 5</span> Domain</li>
+                    <li class="feature-item text flex"><span class="feature-highlight">2GB NVMe</span> Storage</li>
+                    <li class="feature-item text flex"><span class="feature-highlight">50GB</span> Bandwidth</li>
+                    <li class="feature-item text flex"><span class="feature-highlight">Free</span> SSL Certificate</li>
+                    <li class="feature-item text flex"><span class="feature-highlight">24/7</span> Support</li>
+                    <li class="feature-item text flex"><span class="feature-highlight">2GB NVMe</span> Storage</li>
+                    <li class="feature-item text flex"><span class="feature-highlight">Free</span> SSL Certificate</li>
+                </ul>
+                <button class="feature-button button">Buy Now</button>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Footer-->
+<div class="wrapper-light flex">
+    <footer class="footer w-section">
+        <div class="footer-brand">
+            <a href="./index.html"><img class="footer-logo" src="./imgs/logo.svg" alt="Shield Logo"></a>
+            <p class="brand-text ext">Nulla diam felis, malesuada ut erat quis, mattis dignissim justo. Cras cursus,
+                lacus et dignissim
+                volutpat</p>
+        </div>
+        <div class="footer-section footer-links">
+            <h3 class="footer-title title">Quick Links</h3>
+            <ul class="links-list footer-list">
+                <li><a class="text" href="#">Home</a></li>
+                <li><a class="text" href="#">About Us</a></li>
+                <li><a class="text" href="#">Services</a></li>
+                <li><a class="text" href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-section footer-services">
+            <h3 class="footer-title title">Services</h3>
+            <ul class="services-list footer-list">
+                <li><a class="text" href="#">Shared Web Hosting</a></li>
+                <li><a class="text" href="#">VPS Hosting</a></li>
+                <li><a class="text" href="#">Dedicated Server</a></li>
+                <li><a class="text" href="#">Cloud Hosting</a></li>
+                <li><a class="text" href="#">Domain Names</a></li>
+                <li><a class="text" href="#">License Keys</a></li>
+            </ul>
+        </div>
+        <div class="footer-contacts" id="contact">
+            <h3 class="footer-title title">Contact Us</h3>
+            <address class="contacts">
+                <a class="contacts-email text" href="mailto:shield.info@gmail.com">shield.info@gmail.com</a> <br>
+                <a class="contacts-phone text" href="tel:+9199xxx000xx">+91 - 99xxx 000xx</a>
+            </address>
+            <h3 class="social-media-title title">Follow Us</h3>
+            <div class="social-media">
+                <a href="#"><img class="social-icon" src="./imgs/socials/facebook.svg" alt="Facebook"></a>
+                <a href="#"><img class="social-icon" src="./imgs/socials/twitter.svg" alt="Twitter"></a>
+                <a href="#"><img class="social-icon" src="./imgs/socials/youtube.svg" alt="YouTube"></a>
+            </div>
+        </div>
+    </footer>
+</div>
+<!--Copyright section-->
+<div class="copyright">
+    <div class="copyright-container flex-space-between w-section">
+        <p class="copyright-text text">&copy; Copyright Shield. All Rights Reserved.</p>
+        <p class="copyright-text text"><a class="copyright-text text" href="#">Privacy Policy</a> | <a
+                class="copyright-text text" href="#">Terms Condition</a></p>
+    </div>
+</div>
+<script>
+    document.getElementById('searchForm').addEventListener('submit', function (event) {
+        event.preventDefault();
+        performSearch();
+    });
+
+    const suggestions = ['home', 'about', 'services', 'contact'];
+    const input = document.getElementById('domainInput');
+    const suggestionsBox = document.getElementById('suggestions');
+    let currentFocus = -1;
+
+    input.addEventListener('input', function() {
+        const value = this.value.toLowerCase();
+        suggestionsBox.innerHTML = '';
+        if (value) {
+            const filteredSuggestions = suggestions.filter(suggestion => suggestion.startsWith(value));
+            filteredSuggestions.forEach((suggestion, index) => {
+                const div = document.createElement('div');
+                div.classList.add('suggestion');
+                div.textContent = suggestion;
+                div.addEventListener('click', function() {
+                    input.value = suggestion;
+                    suggestionsBox.innerHTML = '';
+                    performSearch();
+                });
+                suggestionsBox.appendChild(div);
+            });
+            currentFocus = -1; // Reset current focus when input changes
+        }
+    });
+
+    input.addEventListener('keydown', function(e) {
+        const suggestionItems = suggestionsBox.getElementsByClassName('suggestion');
+        if (e.key === 'ArrowDown') {
+            currentFocus++;
+            addActive(suggestionItems);
+        } else if (e.key === 'ArrowUp') {
+            currentFocus--;
+            addActive(suggestionItems);
+        } else if (e.key === 'Enter') {
+            e.preventDefault();
+            if (currentFocus > -1 && suggestionItems[currentFocus]) {
+                suggestionItems[currentFocus].click();
+            } else {
+                // Use input value directly if it matches a suggestion
+                const matchingSuggestion = suggestions.find(suggestion => suggestion === input.value.toLowerCase());
+                if (matchingSuggestion) {
+                    input.value = matchingSuggestion;
+                    suggestionsBox.innerHTML = '';
+                    performSearch();
+                }
+            }
+        }
+    });
+
+    function performSearch() {
+        var query = document.getElementById('domainInput').value.toLowerCase();
+        var section = document.getElementById(query);
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+        } else {
+            alert('Section not found');
+        }
+    }
+
+    function addActive(items) {
+        if (!items) return false;
+        removeActive(items);
+        if (currentFocus >= items.length) currentFocus = 0;
+        if (currentFocus < 0) currentFocus = items.length - 1;
+        items[currentFocus].classList.add('active');
+    }
+
+    function removeActive(items) {
+        for (let i = 0; i < items.length; i++) {
+            items[i].classList.remove('active');
+        }
+    }
+
+    document.addEventListener('click', function(event) {
+        if (!suggestionsBox.contains(event.target) && event.target !== input) {
+            suggestionsBox.innerHTML = '';
+        }
+    });
+</script>
+</body>
+</html>
