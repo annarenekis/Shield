@@ -3,54 +3,47 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 16px;
     scroll-behavior: smooth;
 }
-
-body, .text {
+body {
     font-family: "Poppins", sans-serif;
-    font-weight: 400;
     font-style: normal;
     line-height: normal;
-    /*color: #03045E;*/
+    color: #03045E;
 }
-
+.title {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+}
 p, .text {
     color: rgba(3, 4, 94, 0.5);
 }
-
 li, a {
     list-style-type: none;
     text-decoration: none;
     transition: color 0.3s ease;
 }
-
-a:hover {
+a:hover, a:focus {
     color: #0098FF;
     transition: color 0.3s ease;
 }
-
 .w-section {
     width: 1280px;
     margin: 0 auto;
 }
-
 .padding150 {
     padding: 150px 0;
 }
-
 .flex {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 .flex-space-between {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
 .button {
     font-family: "Poppins", sans-serif;
     color: #FFF;
@@ -61,27 +54,16 @@ a:hover {
     line-height: normal;
     cursor: pointer;
 }
-
-.title {
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    color: #03045E;
-    line-height: normal;
-}
-
 /*grid*/
 .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, auto);
 }
-
 /*header*/
 .wrapper-dark {
     background: #F7F8FD;
 }
-
 .wrapper-light {
     background: rgba(246, 246, 246, 0.4);
 }
@@ -91,7 +73,6 @@ header {
 /*nav*/
 .nav-link {
     color: #03045E;
-    /*font-size: 16px;*/
     font-weight: 500;
 }
 .navbar-button {
@@ -102,7 +83,7 @@ header {
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
-.navbar-button:hover {
+.navbar-button:hover, .navbar-button:focus {
     background-color: #0098FF;
     transition: background-color 0.3s ease;
 }
@@ -128,7 +109,7 @@ header {
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
-.about-button:hover, .search-button:hover {
+.about-button:hover, .search-button:hover, .about-button:focus, .search-button:focus  {
     background-color: #03045E;
     transition: background-color 0.3s ease;
 }
@@ -154,16 +135,13 @@ header {
     background: white;
     z-index: 1000;
 }
-
 .suggestion {
     padding: 10px;
     cursor: pointer;
 }
-
-.suggestion:hover {
+.suggestion:hover, .suggestion:focus {
     background-color: #f0f0f0;
 }
-
 input[type="search"] {
     width: 465px;
     height: 60px;
@@ -173,8 +151,8 @@ input[type="search"] {
     border-bottom-left-radius: 5px;
     border: none;
     background: #F6F6F6;
+    font-size: 16px;
 }
-
 .search-button {
     width: 160px;
     height: 60px;
@@ -182,87 +160,71 @@ input[type="search"] {
     border-bottom-right-radius: 5px;
     transition: background-color 0.3s ease;
 }
-
 .search-title {
     font-size: 32px;
     margin-bottom: 36px;
 }
-
 /*domains*/
 .domain-name {
     color: #0098FF;
     font-size: 20px;
 }
-
 .domain-price {
     color: rgba(3, 4, 94, 0.3);
     font-size: 14px;
     font-weight: 500;
 }
-
 /*grid domains*/
 .domains-content {
     width: 500px;
     column-gap: 115px;
     row-gap: 32px;
 }
-
 /*Our Services*/
 .services {
     flex-direction: column;
     gap: 60px;
 }
-
 .services-title {
     font-size: 40px;
 }
-
 /*grid-services*/
 .services-content {
     column-gap: 30px;
     row-gap: 80px;
 }
-
 .services-item {
     width: 407px;
     flex-direction: column;
     text-align: center;
     gap: 30px;
 }
-
 .service-icon {
     padding: 20px;
     background-color: #F6F6F6;
     border-radius: 5px;
 }
-
 .service-title {
     font-size: 20px;
 }
-
 /*<!--Word From Our Clients/Feedbacks-->*/
 .feedback-container {
     flex-direction: column;
 }
-
 .feedback-title {
     font-size: 40px;
 }
-
 .client-name {
     font-size: 20px;
     margin: 30px 0 8px;
 }
-
 .client-info {
     font-size: 14px;
 }
-
 .feedback-text {
     font-size: 18px;
     width: 327px;
 }
-
 /*Feedbacks grid*/
 .feedback-grid {
     display: grid;
@@ -270,7 +232,6 @@ input[type="search"] {
     gap: 30px;
     margin: 60px 0 40px;
 }
-
 .feedback-item {
     width: 406px;
     background: rgba(246, 246, 246, 0.4);
@@ -278,101 +239,82 @@ input[type="search"] {
     flex-direction: column;
     text-align: center;
 }
-
 /*...stats section.*/
 .blue-wrapper {
     background: #0098FF;
 }
-
 .stats {
     padding: 100px 0 145px;
     color: #FFF;
 }
-
 .stats-item {
     display: flex;
     flex-direction: column;
     width: 297px;
     text-align: center
 }
-
 .stat-number, .stat-label {
     color: #FFF;
 }
-
 .stat-number {
     font-size: 60px;
 }
-
 .stat-label {
     font-size: 20px;
 }
-
 /*pricing section*/
 .pricing-container {
     flex-direction: column;
     gap: 60px;
 }
-
 .pricing-card {
     width: 318px;
     flex-direction: column;
     transition: background-color 0.3s, color 0.3s;
 }
-
-.pricing-card:hover {
+.pricing-card:hover, .pricing-card:focus {
     background-color: #0098FF;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     color: #FFF;
     transition: background-color 0.3s, color 0.3s ease;
 }
-
 .pricing-card:hover .title,
-.pricing-card:hover .text {
+.pricing-card:hover .text, .pricing-card:focus .title,
+.pricing-card:focus .text {
     color: #FFF;
     transition: background-color 0.3s, color 0.3s ease;
 }
-
 .feature-item .feature-highlight {
     margin-right: 5px;
 }
-
 .pricing-title {
     font-size: 40px;
 }
-
 .plan-title {
     color: #0098FF;
     font-size: 16px;
 }
-
 .price-title {
     font-size: 32px;
     margin-top: 16px;
 }
-
 .feature-item {
     font-size: 14px;
     border-bottom: 1px solid #F6F6F6;
     height: 41px;
 }
-
 .features {
     width: 100%;
 }
-
 .features {
     margin: 40px 0 50px;
 }
-
 .pricing-card {
     padding: 40px 0 50px;
 }
-
 .feature-highlight {
     font-weight: 600;
 }
-
 .feature-button {
     width: 150px;
     height: 49px;
@@ -380,59 +322,50 @@ input[type="search"] {
     background: #03045E;
     transition: 0.3s ease transform;
 }
-
-.feature-button:hover {
+.feature-button:hover, .feature-button:focus {
     transform: scale(1.1);
     transition: 0.3s ease transform;
 }
-
 /*footer*/
 .footer {
     margin: 100px 0 100px;
     display: flex;
     justify-content: space-between;
 }
-
 .footer-list, .contacts {
     line-height: 40px;
 }
-
 .footer-title {
     color: #000;
     margin-bottom: 14px;
 }
-
 .brand-text {
     width: 297px;
     margin-top: 24px;
 }
-
 .links-list {
     height: 160px;
 }
-
 .social-media-title {
     margin: 30px 0 24px;
 }
-
 .social-media a:not(:last-child) {
     margin-right: 20px;
 }
-
 .social-icon {
     transition: 0.3s ease transform;
 }
-
-.social-icon:hover {
+.social-icon:hover, .social-icon:focus {
     transform: scale(1.5);
     transition: 0.3s ease transform;
 }
-
+address {
+    font-style: normal;
+}
 /*footer copyright*/
 .copyright {
     padding: 40px 0;
 }
-
 .copyright-text {
     color: #03045E;
     font-size: 12px;
