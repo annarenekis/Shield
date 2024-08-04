@@ -115,12 +115,14 @@ header {
 }
 /*Search Your Domain Now/domains section*/
 .domains {
-    gap: 70px;
+    justify-content: space-between;
 }
 /*search-box*/
-.search-box {
-    padding-right: 70px;
-    border-right: 1px solid rgba(3, 4, 94, 0.1);
+.divider {
+    width: 1px;
+    height: 134px;
+    background: #03045E;
+    opacity: 0.1;
 }
 .search-form {
     display: flex;
