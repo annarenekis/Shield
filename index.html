@@ -56,7 +56,7 @@
             <button class="search-button button" type="submit">Find Now</button>
         </form>
     </div>
-    <hr class="divider">
+    <div class="divider"></div>
     <div class="grid-container domains-content">
         <div class="domains-item">
             <h5 class="domain-name title">.com</h5>
@@ -348,8 +348,8 @@
     });
 
     function performSearch() {
-        var query = document.getElementById('domainInput').value.toLowerCase();
-        var section = document.getElementById(query);
+        let query = document.getElementById('domainInput').value.toLowerCase();
+        let section = document.getElementById(query);
         if (section) {
             section.scrollIntoView({ behavior: 'smooth' });
         } else {
